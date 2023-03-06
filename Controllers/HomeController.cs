@@ -43,10 +43,6 @@ namespace Generation_Documents.Controllers
             List<float> totalsArray = new List<float>();
 
 
-
-            // var clientfromRD = _Mapper.Map<Entities.Client>(recivedDataDTO);
-
-
             QuestPDF.Fluent.Document.Create(document =>
             {
 
@@ -117,7 +113,7 @@ namespace Generation_Documents.Controllers
 
         }
 
-
+        // dynamic container and footer  
 
         public class containerDynamic : IDynamicComponent<float>
         {
@@ -268,10 +264,7 @@ namespace Generation_Documents.Controllers
 
                         foreach (var i in Enumerable.Range(0, pricesArray.Length))
                             {
-
-                                //Console.WriteLine(context.PageNumber + " in loop");
-
-                               
+   
 
                             if (pageN != context.PageNumber)
                             {
@@ -348,9 +341,6 @@ namespace Generation_Documents.Controllers
 
 
         }
-
-
-
 
         public class FooterDynamic : IDynamicComponent<float>
         {

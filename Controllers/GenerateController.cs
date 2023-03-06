@@ -102,10 +102,6 @@ namespace Generation_Documents.Controllers
             List<float> totalsArray = new List<float>();
 
 
-
-            // var clientfromRD = _Mapper.Map<Entities.Client>(recivedDataDTO);
-
-
             QuestPDF.Fluent.Document.Create(document =>
             {
 
@@ -169,7 +165,7 @@ namespace Generation_Documents.Controllers
 
                     container.Column(column =>
                     {
-                        //container.PageBreak();
+                 
 
 
 
@@ -178,7 +174,7 @@ namespace Generation_Documents.Controllers
 
                         column.Item().Row(row =>
                         {
-                            // loop 
+                          
                             row.RelativeColumn((float)1.2).Column(column =>
                             {
                                 column.Item().PaddingTop(20).Text("Factuuurnummer").FontSize(10);
@@ -280,7 +276,7 @@ namespace Generation_Documents.Controllers
                                column.Item().Text("Inboedel").FontSize(10);
                            });
                        });
-                        // sales invoice  
+
 
 
 
@@ -296,7 +292,7 @@ namespace Generation_Documents.Controllers
                             {
                                 foreach (var i in Enumerable.Range(0, pricesArray.Length))
                                 {
-                                    //pagenumber is not updating 
+                               
                                    
                                     
 
@@ -309,7 +305,7 @@ namespace Generation_Documents.Controllers
                                     {
 
                                         Total = 0;
-                                        // this code will be acceced when we generate a new page 
+
                                         foreach (var j in Enumerable.Range(0, i))
                                         {
                                             Total = Total + pricesArray[j];
@@ -358,7 +354,7 @@ namespace Generation_Documents.Controllers
 
 
 
-                        // end of sales invoice lines 
+                      
 
 
 
@@ -372,7 +368,7 @@ namespace Generation_Documents.Controllers
             return Ok();
 
         }
-
+        // only the footer is dynamic
         public class FooterDynamic : IDynamicComponent<float>
         {
 
@@ -395,9 +391,6 @@ namespace Generation_Documents.Controllers
 
             public DynamicComponentComposeResult Compose(DynamicContext context)
             {
-
-
-
 
                 var content = context.CreateElement(element =>
                  {
@@ -449,20 +442,6 @@ namespace Generation_Documents.Controllers
 
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
