@@ -104,3 +104,5 @@ C:\Users\wael.el.ghozzi\source\repos\Generation Documents\Generation Documents\b
 C:\Users\wael.el.ghozzi\source\repos\Generation Documents\Generation Documents\bin\Debug\net6.0\runtimes\win-x64\native\libSkiaSharp.dll
 C:\Users\wael.el.ghozzi\source\repos\Generation Documents\Generation Documents\bin\Debug\net6.0\runtimes\win-x86\native\libSkiaSharp.dll
 C:\Users\wael.el.ghozzi\source\repos\Generation Documents\Generation Documents\bin\Debug\net6.0\ced-group-social-imgn-removebg-preview.png
+C:\Users\wael.el.ghozzi\source\repos\Generation Documents\Generation Documents\bin\Debug\net6.0\Microsoft.Owin.dll
+C:\Users\wael.el.ghozzi\source\repos\Generation Documents\Generation Documents\bin\Debug\net6.0\Owin.dll

@@ -74,6 +74,10 @@
               "target": "Package",
               "version": "[7.0.3, )"
             },
+            "Microsoft.Owin": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
             "QuestPDF": {
               "target": "Package",
               "version": "[2022.12.1, )"
